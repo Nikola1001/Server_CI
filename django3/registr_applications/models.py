@@ -5,7 +5,7 @@ from django.urls import reverse
 
 def user_directory_path(instance, filename):
     """директория для сохранения документов пользователя"""
-    return "docs\\user_{}_{}/{}".format(instance.user.id, instance.user, filename)
+    return "docs//user_{}_{}/{}".format(instance.user.id, instance.user, filename)
 
 
 class Statement(models.Model):
