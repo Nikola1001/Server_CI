@@ -1,0 +1,25 @@
+настройка Postgres
+
+
+Открыть доступ из вне
+su - postgres -c "psql -c 'SHOW config_file;'"
+nano /db/pgsql/postgresql.conf     //  /etc/postgresql/12/main/postgresql.conf
+
+Изменяем 
+listen_addresses = '*'
+
+nano /db/pgsql/pg_hba.conf    //  /etc/postgresql/12/main/pg_hba.conf 
+Добавляем строчку 
+host     all     all     192.168.0.10/32     password  // адрес сервера
+
+
+
+
+
+
+psql -Utest_user -h18.223.114.75 -ddb_name   .. Подключение из винды консоль
+
+
+
+#listen_addresses = 'localhost' 
+

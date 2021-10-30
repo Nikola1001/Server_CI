@@ -4,7 +4,7 @@
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
 .venv_windows/
-
+bot_vk/auth_data.py
 
 # Node artifact files
 node_modules/
